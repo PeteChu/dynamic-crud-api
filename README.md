@@ -1,14 +1,18 @@
-# Welcome to your CDK TypeScript project
+# Dynamic CRUD API CDK Project
 
-This is a blank project for CDK development with TypeScript.
+This repository contains a project for creating a dynamic CRUD (Create, Read, Update, Delete) API using AWS CDK (Cloud Development Kit) with TypeScript. The API is designed to be flexible and scalable, allowing for dynamic handling of various entities.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Project Structure
 
-## Useful commands
+- **bin/**: Contains the entry point for the CDK application.
+- **lib/**: Contains the CDK stack definition.
+- **src/**: Contains the Go source code for the Lambda function handling the API requests.
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+## Useful Commands
+
+- `npx cdk deploy` - Deploy this stack to your default AWS account/region
+- `npx cdk diff` - Compare deployed stack with current state
+
+## License
+
+This project is licensed under the MIT License.

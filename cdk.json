@@ -1,4 +1,5 @@
 {
+  "description": "This repository contains a project for creating a dynamic CRUD (Create, Read, Update, Delete) API using AWS CDK (Cloud Development Kit) with TypeScript. The API is designed to be flexible and scalable, allowing for dynamic handling of various entities.",
   "app": "npx ts-node --prefer-ts-exts bin/dynamic-crud-api-cdk.ts",
   "watch": {
     "include": [
