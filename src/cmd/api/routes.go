@@ -1,10 +1,11 @@
 package main
 
 func (app *App) registerRoutes() {
-	api := app.router.Group("/api")
+	// Health check
+	app.router.GET("/", handleHealthCheck)
 
-	// Health Check
-	api.GET("/health", handleHealthCheck)
+	// API routes
+	api := app.router.Group("/api")
 
 	// Dyanmic CRUD
 	api.GET("/:entity", handleGet)           // Get all

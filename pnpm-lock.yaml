@@ -14,10 +14,19 @@ importers:
       constructs:
         specifier: ^10.0.0
         version: 10.3.0
+      dotenv:
+        specifier: ^16.4.5
+        version: 16.4.5
+      env-var:
+        specifier: ^7.5.0
+        version: 7.5.0
       source-map-support:
         specifier: ^0.5.21
         version: 0.5.21
     devDependencies:
+      '@aws-cdk/aws-lambda-go-alpha':
+        specifier: 2.154.0-alpha.0
+        version: 2.154.0-alpha.0(aws-cdk-lib@2.154.0(constructs@10.3.0))(constructs@10.3.0)
       '@types/jest':
         specifier: ^29.5.12
         version: 29.5.12
@@ -54,6 +63,13 @@ packages:
 
   '@aws-cdk/asset-node-proxy-agent-v6@2.0.3':
     resolution: {integrity: sha512-twhuEG+JPOYCYPx/xy5uH2+VUsIEhPTzDY0F1KuB+ocjWWB/KEDiOVL19nHvbPCB6fhWnkykXEMJ4HHcKvjtvg==}
+
+  '@aws-cdk/aws-lambda-go-alpha@2.154.0-alpha.0':
+    resolution: {integrity: sha512-TZwWjqsvmAzfD+3MiAQvXzoUWBlVNkAK3O420y+KXd4AvzdR59ov0PFDciSUbr2FTuSUbb+K8wmp7FzUoi6Zrg==}
+    engines: {node: '>= 14.15.0'}
+    peerDependencies:
+      aws-cdk-lib: ^2.154.0
+      constructs: ^10.0.0
 
   '@aws-cdk/cloud-assembly-schema@36.0.14':
     resolution: {integrity: sha512-8ecWc6vjOXzQjFuzLOX4L28u8ZQn13vNOd6N2cYu26+LuZHoxZAIyyITldLNazxbiqJ1aNSsa++GlvO/wEpGjQ==}
@@ -621,6 +637,10 @@ packages:
     resolution: {integrity: sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==}
     engines: {node: '>=0.3.1'}
 
+  dotenv@16.4.5:
+    resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
+    engines: {node: '>=12'}
+
   ejs@3.1.10:
     resolution: {integrity: sha512-UeJmFfOrAQS8OJWPZ4qtgHyWExa088/MtK5UEyoJGFH67cDEXkZSviOiKRCZ4Xij0zxI3JECgYs3oKx+AizQBA==}
     engines: {node: '>=0.10.0'}
@@ -635,6 +655,10 @@ packages:
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
+
+  env-var@7.5.0:
+    resolution: {integrity: sha512-mKZOzLRN0ETzau2W2QXefbFjo5EF4yWq28OyKb9ICdeNhHJlOE/pHHnz4hdYJ9cNZXcJHo5xN4OT4pzuSHSNvA==}
+    engines: {node: '>=10'}
 
   error-ex@1.3.2:
     resolution: {integrity: sha512-7dFHNmqeFSEt2ZBsCriorKnn3Z2pj+fd9kmI6QoWw4//DL+icEBfc0U7qJCisqrTsKTjw4fNFy2pW9OqStD84g==}
@@ -1348,6 +1372,11 @@ snapshots:
 
   '@aws-cdk/asset-node-proxy-agent-v6@2.0.3': {}
 
+  '@aws-cdk/aws-lambda-go-alpha@2.154.0-alpha.0(aws-cdk-lib@2.154.0(constructs@10.3.0))(constructs@10.3.0)':
+    dependencies:
+      aws-cdk-lib: 2.154.0(constructs@10.3.0)
+      constructs: 10.3.0
+
   '@aws-cdk/cloud-assembly-schema@36.0.14': {}
 
   '@babel/code-frame@7.24.7':
@@ -2043,6 +2072,8 @@ snapshots:
 
   diff@4.0.2: {}
 
+  dotenv@16.4.5: {}
+
   ejs@3.1.10:
     dependencies:
       jake: 10.9.2
@@ -2052,6 +2083,8 @@ snapshots:
   emittery@0.13.1: {}
 
   emoji-regex@8.0.0: {}
+
+  env-var@7.5.0: {}
 
   error-ex@1.3.2:
     dependencies:
