@@ -182,3 +182,15 @@ func handleDelete(c *gin.Context) {
 		"message":    "not found",
 	})
 }
+
+func handleReset(c *gin.Context) {
+	entity := c.Param("entity")
+	_, exists := routeState.data[entity]
+	if exists {
+		routeState.data = make(map[string][]interface{}, 0)
+	}
+	c.JSON(http.StatusOK, gin.H{
+		"statusCode": http.StatusOK,
+		"message":    "success",
+	})
+}

@@ -1,14 +1,15 @@
 @url=http://localhost:3000
 @id=2l0GeY0SUimhvWuARjeLYiWHHSC
-###
+
+### Get all items
 GET {{url}}/api/books HTTP/1.1
 Content-Type: application/json
 
-###
+### Get item by id
 GET {{url}}/api/books/{{id}} HTTP/1.1
 Content-Type: application/json
 
-###
+### Create item
 POST {{url}}/api/books HTTP/1.1
 Content-Type: application/json
 
@@ -16,7 +17,7 @@ Content-Type: application/json
   "name": "The Great Escape"
 }
 
-###
+### Update item
 PUT {{url}}/api/books/{{id}} HTTP/1.1
 Content-Type: application/json
 
@@ -24,8 +25,10 @@ Content-Type: application/json
   "name": "Hello World!"
 }
 
-###
+### Delete item
 DELETE {{url}}/api/books/{{id}} HTTP/1.1
 Content-Type: application/json
 
-
+### Reset an entity
+POST {{url}}/api/books/reset HTTP/1.1
+Content-Type: application/json

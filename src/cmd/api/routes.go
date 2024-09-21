@@ -13,4 +13,5 @@ func (app *App) registerRoutes() {
 	api.POST("/:entity", handlePost)         // Create
 	api.PUT("/:entity/:id", handlePut)       // Update
 	api.DELETE("/:entity/:id", handleDelete) // Delete
+	api.POST("/:entity/reset", handleReset)  // Reset
 }
